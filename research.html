@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; padding: 0; background: #FBF8F2; }
+  body { font-family: 'IBM Plex Sans', sans-serif; color: #211D18; -webkit-font-smoothing: antialiased; }
+  a { color: #20707E; text-decoration: none; }
+  a:hover { color: #14505B; text-decoration: underline; }
+  ::selection { background: #DCE9E7; }
+  @media (max-width: 720px) {
+    [data-m1] { grid-template-columns: 1fr !important; }
+    [data-m1="tight"] { gap: 8px !important; }
+    [data-h1] { font-size: 33px !important; }
+    [data-h1="xl"] { font-size: 37px !important; }
+    [data-pad] { padding: 44px 22px 64px !important; }
+    [data-navwrap] { flex-wrap: wrap !important; row-gap: 10px !important; }
+  }
+</style>
+</helmet>
+<div data-screen-label="Research" style="min-height:100vh;display:flex;flex-direction:column;">
+  <header style="max-width:1040px;width:100%;box-sizing:border-box;margin:0 auto;padding:30px 32px 24px;display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap;">
+    <a href="index.html" style="font-family:'Source Serif 4',serif;font-size:19px;font-weight:600;color:#211D18;">Anubhav Kumar Srivastava</a>
+    <nav data-navwrap style="display:flex;gap:26px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;">
+      <a href="index.html" style="color:#6F675B;">About</a>
+      <a href="research.html" style="color:#20707E;border-bottom:1px solid #20707E;padding-bottom:2px;">Research</a>
+      <a href="cv.html" style="color:#6F675B;">CV</a>
+      <a href="conferences.html" style="color:#6F675B;">Conferences</a>
+      <a href="contact.html" style="color:#6F675B;">Contact</a>
+    </nav>
+  </header>
+  <div style="height:1px;background:#E6DFD2;"></div>
+
+  <main data-pad style="max-width:1040px;width:100%;box-sizing:border-box;margin:0 auto;padding:64px 32px 88px;flex:1;">
+    <h1 data-h1 style="margin:0 0 14px;font-family:'Source Serif 4',serif;font-size:40px;font-weight:600;letter-spacing:-0.01em;">Research interests</h1>
+    <p style="margin:0 0 48px;max-width:640px;font-size:16.5px;line-height:1.7;color:#6F675B;">How far can we push measurement precision with quantum many-body systems — and how do we simulate, certify, and control them at scale?</p>
+
+    <div data-m1 style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#E6DFD2;border:1px solid #E6DFD2;margin-bottom:80px;">
+      <div style="background:#FBF8F2;padding:26px 28px;">
+        <p style="margin:0 0 8px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;color:#20707E;">01</p>
+        <h2 style="margin:0 0 8px;font-family:'Source Serif 4',serif;font-size:21px;font-weight:600;">Quantum metrology &amp; sensing</h2>
+        <p style="margin:0;font-size:15px;line-height:1.65;color:#4C463D;">Optimal precision measurement with many-body spin systems — quantum Fisher information, thresholded field sensing, and topological quantum thermometry.</p>
+      </div>
+      <div style="background:#FBF8F2;padding:26px 28px;">
+        <p style="margin:0 0 8px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;color:#20707E;">02</p>
+        <h2 style="margin:0 0 8px;font-family:'Source Serif 4',serif;font-size:21px;font-weight:600;">Quantum simulation of spin systems</h2>
+        <p style="margin:0;font-size:15px;line-height:1.65;color:#4C463D;">Large-scale classical and variational simulation of many-body dynamics — tensor networks, frustrated geometries, and Hamiltonian engineering.</p>
+      </div>
+      <div style="background:#FBF8F2;padding:26px 28px;">
+        <p style="margin:0 0 8px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;color:#20707E;">03</p>
+        <h2 style="margin:0 0 8px;font-family:'Source Serif 4',serif;font-size:21px;font-weight:600;">Certification &amp; convex optimization</h2>
+        <p style="margin:0;font-size:15px;line-height:1.65;color:#4C463D;">Semidefinite-programming approaches to entanglement detection and device-independent certification of metrological resources from measured data.</p>
+      </div>
+      <div style="background:#FBF8F2;padding:26px 28px;">
+        <p style="margin:0 0 8px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;color:#20707E;">04</p>
+        <h2 style="margin:0 0 8px;font-family:'Source Serif 4',serif;font-size:21px;font-weight:600;">Machine learning for quantum systems</h2>
+        <p style="margin:0;font-size:15px;line-height:1.65;color:#4C463D;">Attention-based neural networks for resource-efficient state tomography, classical shadows for metrology, and ML tools for state certification.</p>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;margin-bottom:8px;">
+      <h1 data-h1 style="margin:0;font-family:'Source Serif 4',serif;font-size:40px;font-weight:600;letter-spacing:-0.01em;">Publications</h1>
+      <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8A8175;">* equal contribution</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;">
+      <div data-m1="tight" style="display:grid;grid-template-columns:72px 1fr;gap:28px;padding:30px 0;border-bottom:1px solid #E6DFD2;">
+        <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#20707E;">2026</p>
+        <div>
+          <h3 style="margin:0 0 6px;font-family:'Source Serif 4',serif;font-size:20px;font-weight:600;line-height:1.35;"><a href="https://doi.org/10.1103/3z2c-2kkl" style="color:#211D18;" style-hover="color:#20707E;">Non-linear quantum sensing and frustrated Kitaev trimers</a></h3>
+          <p style="margin:0 0 4px;font-size:14.5px;color:#4C463D;">C. H. Alderete*, <strong style="font-weight:600;">A. K. Srivastava*</strong>, A. T. Sornborger</p>
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8A8175;">Physical Review Research, accepted (2026) · arXiv:2507.10418</p>
+        </div>
+      </div>
+      <div data-m1="tight" style="display:grid;grid-template-columns:72px 1fr;gap:28px;padding:30px 0;border-bottom:1px solid #E6DFD2;">
+        <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#20707E;">2025</p>
+        <div>
+          <h3 style="margin:0 0 6px;font-family:'Source Serif 4',serif;font-size:20px;font-weight:600;line-height:1.35;"><a href="https://doi.org/10.1103/PhysRevA.111.052216" style="color:#211D18;" style-hover="color:#20707E;">Topological quantum thermometry</a></h3>
+          <p style="margin:0 0 4px;font-size:14.5px;color:#4C463D;"><strong style="font-weight:600;">A. K. Srivastava</strong>, U. Bhattacharya, M. Lewenstein, M. Płodzień</p>
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8A8175;">Physical Review A 111, 052216 (2025)</p>
+        </div>
+      </div>
+      <div data-m1="tight" style="display:grid;grid-template-columns:72px 1fr;gap:28px;padding:30px 0;border-bottom:1px solid #E6DFD2;">
+        <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#20707E;">2024</p>
+        <div>
+          <h3 style="margin:0 0 6px;font-family:'Source Serif 4',serif;font-size:20px;font-weight:600;line-height:1.35;"><a href="https://doi.org/10.1007/978-3-031-55657-9_4" style="color:#211D18;" style-hover="color:#20707E;">Introduction to quantum entanglement in many-body systems</a></h3>
+          <p style="margin:0 0 4px;font-size:14.5px;color:#4C463D;"><strong style="font-weight:600;">A. K. Srivastava*</strong>, G. Müller-Rigat*, M. Lewenstein, G. Rajchel-Mieldzioć</p>
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8A8175;">Lecture Notes in Physics, vol. 1025, Springer (2024)</p>
+        </div>
+      </div>
+      <div data-m1="tight" style="display:grid;grid-template-columns:72px 1fr;gap:28px;padding:30px 0;border-bottom:1px solid #E6DFD2;">
+        <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#20707E;">2024</p>
+        <div>
+          <h3 style="margin:0 0 6px;font-family:'Source Serif 4',serif;font-size:20px;font-weight:600;line-height:1.35;"><a href="https://doi.org/10.1103/PhysRevResearch.6.033248" style="color:#211D18;" style-hover="color:#20707E;">Enhancing quantum state tomography via resource-efficient attention-based neural networks</a></h3>
+          <p style="margin:0 0 4px;font-size:14.5px;color:#4C463D;">A. M. Palmieri, G. Müller-Rigat, <strong style="font-weight:600;">A. K. Srivastava</strong>, M. Lewenstein, G. Rajchel-Mieldzioć, M. Płodzień</p>
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8A8175;">Physical Review Research 6, 033248 (2024)</p>
+        </div>
+      </div>
+      <div data-m1="tight" style="display:grid;grid-template-columns:72px 1fr;gap:28px;padding:30px 0;border-bottom:1px solid #E6DFD2;">
+        <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#20707E;">2023</p>
+        <div>
+          <h3 style="margin:0 0 6px;font-family:'Source Serif 4',serif;font-size:20px;font-weight:600;line-height:1.35;"><a href="https://doi.org/10.22331/q-2023-10-24-1152" style="color:#211D18;" style-hover="color:#20707E;">Certifying the quantum Fisher information from a given set of mean values: a semidefinite programming approach</a></h3>
+          <p style="margin:0 0 4px;font-size:14.5px;color:#4C463D;">G. Müller-Rigat, <strong style="font-weight:600;">A. K. Srivastava</strong>, S. Kurdziałek, G. Rajchel-Mieldzioć, M. Lewenstein, I. Frérot</p>
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8A8175;">Quantum 7, 1152 (2023)</p>
+        </div>
+      </div>
+      <div data-m1="tight" style="display:grid;grid-template-columns:72px 1fr;gap:28px;padding:30px 0;border-bottom:1px solid #E6DFD2;">
+        <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#20707E;">2026</p>
+        <div>
+          <h3 style="margin:0 0 6px;font-family:'Source Serif 4',serif;font-size:20px;font-weight:600;line-height:1.35;"><a href="https://doi.org/10.3389/frym.2026.1751538" style="color:#211D18;" style-hover="color:#20707E;">Infinite multiverses and where to find them?</a></h3>
+          <p style="margin:0 0 4px;font-size:14.5px;color:#4C463D;"><strong style="font-weight:600;">A. K. Srivastava</strong></p>
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8A8175;">Frontiers for Young Minds, MSCA special edition (2026) · outreach</p>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin:36px 0 0;font-size:15px;line-height:1.7;color:#6F675B;max-width:640px;"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#20707E;">Ongoing —</span> classical-shadows frameworks for quantum metrology and thermometry, and machine-learning tools for quantum state certification and modeling protein dynamics in plant chlorophyll.</p>
+  </main>
+
+  <footer style="max-width:1040px;width:100%;box-sizing:border-box;margin:0 auto;padding:26px 32px 40px;border-top:1px solid #E6DFD2;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A8175;">
+    <span>© 2026 Anubhav Kumar Srivastava</span>
+    <span>Barcelona, Spain</span>
+  </footer>
+</div>
+</x-dc>
+</body>
+</html>
