@@ -28,7 +28,7 @@
   .card-hover:hover { border-color:#1F7A6C; box-shadow:0 2px 16px rgba(31,122,108,0.08); }
   @media (max-width: 760px) {
     [data-hero] { grid-template-columns: 1fr !important; }
-    [data-hero] > div:last-child { order: -1; width: 200px !important; margin: 0 auto; }
+    [data-hero] > div:last-child { order: -1; width: 250px !important; margin: 0 auto; }
     [data-grid3] { grid-template-columns: 1fr !important; }
     [data-navlinks] {
       display: none !important;
@@ -37,11 +37,12 @@
       left: 0 !important;
       right: 0 !important;
       flex-direction: column !important;
-      align-items: flex-start !important;
+      align-items: center !important;
+      text-align: center !important;
       gap: 4px !important;
       background: #FAF6EF !important;
       border-bottom: 1px solid #E3D9C4 !important;
-      padding: 6px 0 20px !important;
+      padding: 6px 24px 20px !important;
       box-shadow: 0 14px 28px rgba(34,30,23,0.08) !important;
     }
     #nav-toggle:checked ~ [data-navlinks] { display: flex !important; }
@@ -71,7 +72,7 @@
   </header>
 
   <main style="max-width:1080px;width:100%;box-sizing:border-box;margin:0 auto;padding:96px 32px 100px;flex:1;">
-    <div data-hero style="display:grid;grid-template-columns:1fr 400px;gap:64px;align-items:center;margin-bottom:130px;">
+    <div data-hero style="display:grid;grid-template-columns:1fr 320px;gap:64px;align-items:center;margin-bottom:130px;">
       <div>
         <p style="margin:0 0 18px;font-family:'IBM Plex Mono',monospace;font-size:15px;color:#1F7A6C;">Hi, my name is</p>
         <h1 data-h1 style="margin:0 0 8px;font-size:56px;font-weight:700;line-height:1.1;letter-spacing:-0.01em;color:#17140F;">Anubhav Kumar Srivastava.</h1>
