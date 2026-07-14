@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #FAF6EF; }
+  body { font-family: 'Space Grotesk', sans-serif; color: #221E17; -webkit-font-smoothing: antialiased; }
+  a { color: #1F7A6C; text-decoration: none; }
+  a:hover { color: #175F54; }
+  ::selection { background: rgba(31,122,108,0.18); }
+  .nav-link { color:#4A4335; transition:color .2s ease; }
+  .nav-link:hover { color:#1F7A6C; }
+  .btn-outline { display:inline-block; border:1px solid #1F7A6C; color:#1F7A6C; padding:16px 34px; border-radius:3px; font-family:'IBM Plex Mono',monospace; font-size:14.5px; transition:background .25s ease, color .25s ease; }
+  .btn-outline:hover { background:#1F7A6C; color:#FAF6EF; }
+  .row-hover { color:#221E17; transition:background .2s ease; }
+  .row-hover:hover { background:#F1EAD9; }
+  @media (max-width: 760px) {
+    [data-navlinks] { display: none !important; }
+    [data-h1] { font-size: 34px !important; }
+    [data-row] { grid-template-columns: 1fr !important; gap: 4px !important; }
+  }
+</style>
+</helmet>
+<div data-screen-label="Contact" style="min-height:100vh;display:flex;flex-direction:column;">
+  <header style="position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);background:rgba(250,246,239,0.88);border-bottom:1px solid #E3D9C4;">
+    <div style="max-width:1080px;margin:0 auto;padding:22px 32px;display:flex;justify-content:space-between;align-items:center;">
+      <a href="index.html" style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#221E17;letter-spacing:-0.01em;">Anubhav Srivastava</a>
+      <nav data-navlinks style="display:flex;gap:28px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.04em;text-transform:uppercase;">
+        <a href="index.html" class="nav-link">About</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="cv.html" class="nav-link">CV</a>
+        <a href="conferences.html" class="nav-link">Conferences</a>
+        <a href="contact.html" style="color:#1F7A6C;border-bottom:1px solid #1F7A6C;padding-bottom:3px;">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="max-width:800px;width:100%;box-sizing:border-box;margin:0 auto;padding:120px 32px 130px;flex:1;text-align:center;">
+    <p style="margin:0 0 18px;font-family:'IBM Plex Mono',monospace;font-size:15px;color:#1F7A6C;">What's next</p>
+    <h1 data-h1 style="margin:0 0 20px;font-size:46px;font-weight:700;color:#17140F;letter-spacing:-0.01em;">Get in touch</h1>
+    <p style="margin:0 0 48px;font-size:16.5px;line-height:1.7;color:#4A4335;">Open to conversations about quantum sensing, simulation, and collaboration — or anything else on this site.</p>
+    <a href="mailto:anubhavksri98@gmail.com" class="btn-outline" style="margin-bottom:80px;">Say hello ↗</a>
+
+    <div style="text-align:left;display:flex;flex-direction:column;">
+      <a href="mailto:anubhavksri98@gmail.com" data-row class="row-hover" style="display:grid;grid-template-columns:160px 1fr;gap:24px;align-items:baseline;padding:20px 4px;border-top:1px solid #E3D9C4;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#1F7A6C;">Email</span>
+        <span style="font-size:16px;">anubhavksri98@gmail.com</span>
+      </a>
+      <a href="https://scholar.google.com/citations?user=Zjx67zoAAAAJ&hl=es&oi=ao" data-row class="row-hover" style="display:grid;grid-template-columns:160px 1fr;gap:24px;align-items:baseline;padding:20px 4px;border-top:1px solid #E3D9C4;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#1F7A6C;">Google Scholar</span>
+        <span style="font-size:16px;">Publication profile ↗</span>
+      </a>
+      <a href="https://orcid.org/0000-0002-5739-1722" data-row class="row-hover" style="display:grid;grid-template-columns:160px 1fr;gap:24px;align-items:baseline;padding:20px 4px;border-top:1px solid #E3D9C4;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#1F7A6C;">ORCID</span>
+        <span style="font-size:16px;">0000-0002-5739-1722 ↗</span>
+      </a>
+      <a href="https://www.researchgate.net/profile/Anubhav-Kumar-Srivastava" data-row class="row-hover" style="display:grid;grid-template-columns:160px 1fr;gap:24px;align-items:baseline;padding:20px 4px;border-top:1px solid #E3D9C4;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#1F7A6C;">ResearchGate</span>
+        <span style="font-size:16px;">ResearchGate profile ↗</span>
+      </a>
+      <a href="https://www.linkedin.com/in/anubhavks98" data-row class="row-hover" style="display:grid;grid-template-columns:160px 1fr;gap:24px;align-items:baseline;padding:20px 4px;border-top:1px solid #E3D9C4;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#1F7A6C;">LinkedIn</span>
+        <span style="font-size:16px;">linkedin.com/in/anubhavks98 ↗</span>
+      </a>
+      <a href="https://github.com/anubhavks" data-row class="row-hover" style="display:grid;grid-template-columns:160px 1fr;gap:24px;align-items:baseline;padding:20px 4px;border-top:1px solid #E3D9C4;border-bottom:1px solid #E3D9C4;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#1F7A6C;">GitHub</span>
+        <span style="font-size:16px;">github.com/anubhavks ↗</span>
+      </a>
+    </div>
+  </main>
+
+  <footer style="max-width:1080px;width:100%;box-sizing:border-box;margin:0 auto;padding:28px 32px 44px;border-top:1px solid #E3D9C4;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8C8171;">
+    <span>© 2026 Anubhav Kumar Srivastava</span>
+    <span>Barcelona, Spain</span>
+  </footer>
+</div>
+</x-dc>
+</body>
+</html>
