@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #FAF6EF; }
+  body { font-family: 'Space Grotesk', sans-serif; color: #221E17; -webkit-font-smoothing: antialiased; }
+  a { color: #1F7A6C; text-decoration: none; }
+  a:hover { color: #175F54; }
+  ::selection { background: rgba(31,122,108,0.18); }
+  .nav-link { color:#4A4335; transition:color .2s ease; }
+  .nav-link:hover { color:#1F7A6C; }
+  .btn-outline { display:inline-block; border:1px solid #1F7A6C; color:#1F7A6C; padding:13px 22px; border-radius:3px; font-family:'IBM Plex Mono',monospace; font-size:13.5px; transition:background .25s ease, color .25s ease; }
+  .btn-outline:hover { background:#1F7A6C; color:#FAF6EF; }
+  @media (max-width: 760px) {
+    [data-sec] { grid-template-columns: 1fr !important; gap: 14px !important; }
+    [data-navlinks] { display: none !important; }
+    [data-h1] { font-size: 34px !important; }
+    [data-cvhead] { flex-direction: column !important; align-items: flex-start !important; gap: 20px !important; }
+  }
+</style>
+</helmet>
+<div data-screen-label="CV" style="min-height:100vh;display:flex;flex-direction:column;">
+  <header style="position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);background:rgba(250,246,239,0.88);border-bottom:1px solid #E3D9C4;">
+    <div style="max-width:1080px;margin:0 auto;padding:22px 32px;display:flex;justify-content:space-between;align-items:center;">
+      <a href="index.html" style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#221E17;letter-spacing:-0.01em;">Anubhav Srivastava</a>
+      <nav data-navlinks style="display:flex;gap:28px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.04em;text-transform:uppercase;">
+        <a href="index.html" class="nav-link">About</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="cv.html" style="color:#1F7A6C;border-bottom:1px solid #1F7A6C;padding-bottom:3px;">CV</a>
+        <a href="conferences.html" class="nav-link">Conferences</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="max-width:1080px;width:100%;box-sizing:border-box;margin:0 auto;padding:88px 32px 100px;flex:1;">
+    <div data-cvhead style="display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:56px;">
+      <div style="display:flex;align-items:center;gap:16px;flex:1;">
+        <h1 data-h1 style="margin:0;font-size:38px;font-weight:700;color:#17140F;white-space:nowrap;"><span style="color:#1F7A6C;">·</span> Curriculum vitae</h1>
+        <div style="flex:1;height:1px;background:#DFD5BE;"></div>
+      </div>
+      <a href="assets/Anubhav_Srivastava_CV.pdf" download="Anubhav_Srivastava_CV.pdf" class="btn-outline" style="white-space:nowrap;">Download PDF ↓</a>
+    </div>
+
+    <section data-sec style="display:grid;grid-template-columns:180px 1fr;gap:32px;padding:34px 0;border-top:1px solid #E3D9C4;">
+      <h2 style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.12em;text-transform:uppercase;color:#1F7A6C;font-weight:500;">Education</h2>
+      <div style="display:flex;flex-direction:column;gap:26px;">
+        <div>
+          <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+            <h3 style="margin:0;font-size:18px;font-weight:600;color:#17140F;">PhD, Quantum Physics — ICFO, Spain</h3>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8C8171;">2021 – 2026</span>
+          </div>
+          <p style="margin:6px 0 0;font-size:14.5px;line-height:1.65;color:#4A4335;">ENLIGHTEN Marie Skłodowska-Curie Co-fund Fellow. Supervisor: Prof. Maciej Lewenstein; co-supervisor: Dr. Marcin Płodzień. Thesis: <em>Quantum Simulations of Spin Systems for Optimal Quantum Metrology</em>.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+            <h3 style="margin:0;font-size:18px;font-weight:600;color:#17140F;">BS-MS Dual Degree — IISER Mohali, India</h3>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8C8171;">2016 – 2021</span>
+          </div>
+          <p style="margin:6px 0 0;font-size:14.5px;line-height:1.65;color:#4A4335;">Major in Physics, minor in Data Science. INSPIRE Scholarship. MS thesis: <em>Resetting Quantum Systems through Superposition of Evolution</em>, with Dr. Manabendra Nath Bera.</p>
+        </div>
+      </div>
+    </section>
+
+    <section data-sec style="display:grid;grid-template-columns:180px 1fr;gap:32px;padding:34px 0;border-top:1px solid #E3D9C4;">
+      <h2 style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.12em;text-transform:uppercase;color:#1F7A6C;font-weight:500;">Research experience</h2>
+      <div style="display:flex;flex-direction:column;gap:22px;">
+        <div>
+          <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+            <h3 style="margin:0;font-size:18px;font-weight:600;color:#17140F;">Los Alamos National Laboratory, USA</h3>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8C8171;">2024</span>
+          </div>
+          <p style="margin:6px 0 0;font-size:14.5px;line-height:1.65;color:#4A4335;">Quantum Computing Summer School, with Dr. A. Sornborger — thresholded magnetic-field sensing with frustrated spin systems.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+            <h3 style="margin:0;font-size:18px;font-weight:600;color:#17140F;">IIT Bombay, India</h3>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8C8171;">2019</span>
+          </div>
+          <p style="margin:6px 0 0;font-size:14.5px;line-height:1.65;color:#4A4335;">Internship with Dr. S. Vinjanampathy — strongly interacting open quantum systems.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+            <h3 style="margin:0;font-size:18px;font-weight:600;color:#17140F;">IIT Kanpur, India</h3>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8C8171;">2017 – 2018</span>
+          </div>
+          <p style="margin:6px 0 0;font-size:14.5px;line-height:1.65;color:#4A4335;">Internships with Dr. R. Mittal (quantum algorithms: Grover's search, Shor's factorization) and Dr. S. Ghosh (PID control for coherent quantum-optics laser setups).</p>
+        </div>
+      </div>
+    </section>
+
+    <section data-sec style="display:grid;grid-template-columns:180px 1fr;gap:32px;padding:34px 0;border-top:1px solid #E3D9C4;">
+      <h2 style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.12em;text-transform:uppercase;color:#1F7A6C;font-weight:500;">Technical skills</h2>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:14.5px;line-height:1.65;color:#4A4335;">
+        <p style="margin:0;"><strong style="font-weight:600;color:#17140F;">Programming —</strong> Python (advanced), Julia, Java, C++</p>
+        <p style="margin:0;"><strong style="font-weight:600;color:#17140F;">Quantum SDKs —</strong> Qiskit, PennyLane, QuSpin, QuTiP</p>
+        <p style="margin:0;"><strong style="font-weight:600;color:#17140F;">Numerical &amp; optimization —</strong> tensor networks (iTensor), semidefinite programming, convex optimization, quantum circuits</p>
+        <p style="margin:0;"><strong style="font-weight:600;color:#17140F;">Machine learning —</strong> PyTorch, scikit-learn, attention-based neural networks, quantum machine learning</p>
+        <p style="margin:0;"><strong style="font-weight:600;color:#17140F;">Scientific computing —</strong> many-body simulation, variational algorithms, Hamiltonian learning</p>
+      </div>
+    </section>
+
+    <section data-sec style="display:grid;grid-template-columns:180px 1fr;gap:32px;padding:34px 0;border-top:1px solid #E3D9C4;">
+      <h2 style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.12em;text-transform:uppercase;color:#1F7A6C;font-weight:500;">Leadership &amp; community</h2>
+      <ul style="margin:0;padding:0 0 0 18px;display:flex;flex-direction:column;gap:12px;font-size:14.5px;line-height:1.65;color:#4A4335;">
+        <li>Co-supervised two Bachelor's and Master's students in quantum simulation and ML-based biophysics (2025–26).</li>
+        <li>Co-founder of QTPi, a quantum awareness hub — 300+ Discord members, global outreach lecture series.</li>
+        <li>ICFO Young Photonics — taught school students the basics of quantum mechanics and computing (2023, 2025).</li>
+        <li>Contributor to Frontiers for Young Minds, MSCA special edition (2025).</li>
+        <li>Group coordinator for the Quantum Optics Theory group at ICFO (2022–25); co-founder of the Turing coding club at IISER Mohali.</li>
+      </ul>
+    </section>
+
+    <section data-sec style="display:grid;grid-template-columns:180px 1fr;gap:32px;padding:34px 0;border-top:1px solid #E3D9C4;border-bottom:1px solid #E3D9C4;">
+      <h2 style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.12em;text-transform:uppercase;color:#1F7A6C;font-weight:500;">Languages</h2>
+      <p style="margin:0;font-size:14.5px;line-height:1.65;color:#4A4335;">English (fluent) · Spanish (intermediate) · French (beginner) · Hindi (native)</p>
+    </section>
+  </main>
+
+  <footer style="max-width:1080px;width:100%;box-sizing:border-box;margin:0 auto;padding:28px 32px 44px;border-top:1px solid #E3D9C4;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8C8171;">
+    <span>© 2026 Anubhav Kumar Srivastava</span>
+    <span>Barcelona, Spain</span>
+  </footer>
+</div>
+</x-dc>
+</body>
+</html>
