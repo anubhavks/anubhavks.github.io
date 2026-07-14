@@ -25,6 +25,9 @@
   .pub-title:hover { color:#1F7A6C !important; }
   @media (max-width: 760px) {
     [data-grid2] { grid-template-columns: 1fr !important; }
+    [data-pubs-heading] { flex-wrap: wrap !important; }
+    [data-pubs-heading] > div { flex-basis: 100% !important; order: 1 !important; height: 0 !important; }
+    [data-pubs-heading] > p { white-space: normal !important; order: 2 !important; }
     [data-navlinks] {
       display: none !important;
       position: absolute !important;
@@ -97,7 +100,7 @@
       </div>
     </div>
 
-    <div style="display:flex;align-items:center;gap:16px;margin-bottom:8px;">
+    <div data-pubs-heading style="display:flex;align-items:center;gap:16px;margin-bottom:8px;">
       <h1 style="margin:0;font-size:38px;font-weight:700;color:#17140F;white-space:nowrap;"><span style="color:#1F7A6C;">·</span> Publications</h1>
       <div style="flex:1;height:1px;background:#DFD5BE;"></div>
       <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8C8171;white-space:nowrap;">* equal contribution</p>
